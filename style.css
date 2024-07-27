@@ -1,0 +1,10 @@
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.section {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin: 32px 0;
+}

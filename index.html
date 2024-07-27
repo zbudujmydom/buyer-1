@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Message counter:</h2>
+      <textarea id="message"></textarea>
+      <div><span id="counter">0</span>/50</div>
+      <button id="addElement">Add element</button>
+    </div>
+    <div id="currencies-list" class="section">
+      <h2>Currencies list:</h2>
+    </div>
+    <div class="section">
+      <h2>Currency converter:</h2>
+      <form id="converter">
+        <div>
+          <label for="amount">Amount</label>
+          <input id="amount" name="amount" type="number" min="0.01" step="0.01" required />
+        </div>
+        <div>
+          <label for="currency">Waluta</label>
+          <select id="currency" name="currency">
+            <option value="EUR">Euro</option>
+            <option value="USD">Dolar</option>
+            <option value="CHD">Frank</option>
+          </select>
+        </div>
+        <button type="submit" id="submitButton">Przelicz</button>
+      </form>
+      <h3 id="result"></h3>
+      <div id="converterError" class="error"></div>
+    </div>
+    <script src="main.js"></script>
+    <script src="currencies.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
